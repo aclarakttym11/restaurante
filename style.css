@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+input, select, button {
+  padding: 6px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover { opacity: 0.9; }
+
+.danger { background: #dc3545; color: #fff; border: none; }
+.danger:hover { background: #c82333; }
+
+.cliente, .item, .categoria-container {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 10px 0;
+  text-align: center;
+}
+
+.add-prato {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.cardapio {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.categoria-container {
+  min-width: 200px;
+  flex: 1;
+}
+
+ul { list-style: none; padding: 0; }
+li { margin: 5px 0; }

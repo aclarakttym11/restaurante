@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Restaurante</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🍽 Ponto do Sabor</h1>
+
+  <!-- Adicionar Cliente -->
+  <h2>Adicionar Cliente</h2>
+  <div class="cliente">
+    <input type="text" id="nomeCliente" placeholder="Nome do cliente">
+    <button onclick="adicionarCliente()">Adicionar Cliente</button>
+  </div>
+
+  <!-- Adicionar Prato -->
+  <h2>Adicionar Novo Prato</h2>
+  <div class="add-prato">
+    <input type="text" id="nomePrato" placeholder="Nome do prato">
+    <input type="number" id="precoPrato" placeholder="Preço" step="0.01" min="0">
+    <select id="categoriaPrato">
+      <option value="comida">Comida</option>
+      <option value="bebida">Bebida</option>
+      <option value="sobremesa">Sobremesa</option>
+      <option value="salgado">Salgado</option>
+    </select>
+    <button onclick="adicionarPrato()">Adicionar Prato</button>
+  </div>
+
+  <!-- Cardápio -->
+  <h2>Cardápio</h2>
+  <div class="cardapio"></div>
+
+  <!-- Contas dos Clientes -->
+  <h2>Contas dos Clientes</h2>
+  <div id="contas"></div>
+
+  <div style="text-align:center; margin-top:20px;">
+    <a href="relatorios.html"><button>📊 Ver Relatórios</button></a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
